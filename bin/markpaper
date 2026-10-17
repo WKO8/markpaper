@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+# Check if target binary exists, if not build it
+if [ ! -f "$SCRIPT_DIR/target/release/markpaper" ]; then
+    echo "Compiling MarkPaper..."
+    cd "$SCRIPT_DIR/web" && pnpm build
+    cd "$SCRIPT_DIR" && cargo build --release
+fi
+
+exec "$SCRIPT_DIR/target/release/markpaper" "$@"

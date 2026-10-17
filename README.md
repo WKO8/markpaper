@@ -1,4 +1,4 @@
-# Markdown Viewer 📖
+# MarkPaper 📖
 
 > A publication-grade, PDF-style Markdown reader built with a high-performance **Rust** core and modern web typography engine. Designed specifically for Ubuntu and Linux desktop environments.
 
@@ -173,8 +173,8 @@ flowchart TD
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/your-username/markdown-viewer.git
-cd markdown-viewer
+git clone https://github.com/WKO8/markpaper.git
+cd markpaper
 
 # 2. Build the web frontend
 cd web
@@ -186,7 +186,7 @@ cd ..
 cargo build --release
 
 # 4. Run with a markdown file
-./target/release/markdown-viewer examples/sample-showcase.md
+./target/release/markpaper examples/sample-showcase.md
 ```
 
 ---
@@ -200,13 +200,13 @@ To install the viewer globally into your user environment (`~/.local/bin` and `~
 ```
 
 ### What the installer does:
-1. Builds the release binary and copies it to `~/.local/bin/markdown-viewer`.
+1. Builds the release binary and installs it to `~/.local/bin/markpaper` (with symlink `markdown-viewer`).
 2. Installs high-resolution SVG desktop icons to `~/.local/share/icons/hicolor/scalable/apps/`.
-3. Registers the `markdown-viewer.desktop` file with your desktop launcher and associates MIME types (`text/markdown`, `text/x-markdown`).
+3. Registers `markpaper.desktop` with your desktop launcher and associates MIME types (`text/markdown`, `text/x-markdown`).
 
 You can now:
-- Run `markdown-viewer <file.md>` from any directory in your terminal.
-- Right-click any `.md` file in **Files (Nautilus)** -> **Open With...** -> **Markdown Viewer**.
+- Run `markpaper <file.md>` from any directory in your terminal.
+- Right-click any `.md` file in **Files (Nautilus)** -> **Open With...** -> **MarkPaper**.
 
 ---
 
@@ -248,17 +248,20 @@ You can now:
 ## 📁 Project Structure
 
 ```
-markdown-viewer/
+markpaper/
+├── .github/
+│   └── workflows/
+│       └── release.yml         # Automated GitHub Actions release pipeline
 ├── Cargo.toml                  # Rust workspace & dependencies
 ├── Cargo.lock
 ├── LICENSE                     # MIT License
 ├── README.md                   # Project documentation & AI disclosure
 ├── install.sh                  # Global installer for Ubuntu / Linux
-├── markdown-viewer.desktop      # Freedesktop application entry
+├── markpaper.desktop           # Freedesktop application entry
 ├── assets/
 │   └── icon.svg                # Vector desktop application icon
 ├── bin/
-│   └── markdown-viewer         # Local launcher script
+│   └── markpaper               # Local launcher script
 ├── examples/
 │   └── sample-showcase.md      # Comprehensive feature test document
 ├── src/                        # Rust Core (Backend Daemon)

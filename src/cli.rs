@@ -4,9 +4,9 @@ use std::path::PathBuf;
 /// Command-line arguments for Markdown Viewer
 #[derive(Parser, Debug)]
 #[command(
-    name = "markdown-viewer",
+    name = "markpaper",
     version = "1.0.0",
-    about = "A publication-grade PDF-style Markdown viewer for Ubuntu"
+    about = "MarkPaper - A publication-grade PDF-style Markdown reader for Linux"
 )]
 pub struct Cli {
     /// Path to the markdown file to view

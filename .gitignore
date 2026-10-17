@@ -24,3 +24,10 @@ web/dist/
 # OS artifacts
 .DS_Store
 Thumbs.db
+
+# Release packages & distribution archives
+dist-pkg/
+release-pkg/
+*.tar.gz
+*.tar.gz.sha256
+

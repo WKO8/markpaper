@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=MarkPaper
+GenericName=Markdown Reader & PDF-Style Viewer
+Comment=A publication-grade PDF-style Markdown reader for Linux
+Exec=markpaper %f
+Icon=markpaper
+Terminal=false
+Categories=Office;Viewer;Utility;TextEditor;
+MimeType=text/markdown;text/x-markdown;text/plain;
+StartupNotify=true
+StartupWMClass=markpaper
+Keywords=markdown;viewer;pdf;reader;katex;mermaid;

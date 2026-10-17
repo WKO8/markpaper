@@ -1,8 +1,8 @@
 [package]
-name = "markdown-viewer"
+name = "markpaper"
 version = "1.0.0"
 edition = "2021"
-description = "A publication-grade PDF-style Markdown viewer for Ubuntu"
+description = "MarkPaper - A publication-grade PDF-style Markdown reader for Linux"
 authors = ["WKO"]
 
 [dependencies]
