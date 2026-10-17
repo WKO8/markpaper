@@ -174,7 +174,7 @@ export const DocumentViewer: React.FC<DocumentViewerProps> = ({
 
               {/* Running Footer with Page Numbers */}
               <div className="pdf-page-footer">
-                <span>PDF Style Viewer</span>
+                <span>MarkPaper</span>
                 <span className="font-mono font-medium">
                   Page {index + 1} of {pages.length}
                 </span>
