@@ -1,0 +1,26 @@
+# Rust build artifacts
+target/
+**/*.rs.bk
+
+# Node & Frontend dependencies
+node_modules/
+web/node_modules/
+web/dist/
+.pnpm-debug.log*
+
+# Environment and local files
+.env
+.env.local
+*.swp
+*.swo
+*~
+
+# IDE & Editor artifacts
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS artifacts
+.DS_Store
+Thumbs.db

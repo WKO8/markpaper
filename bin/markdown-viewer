@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -e
+
+# Resolve directory of this script
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
+BINARY="$PROJECT_ROOT/target/release/markdown-viewer"
+
+if [ ! -f "$BINARY" ]; then
+    echo "Compiling release binary..."
+    cargo build --release --manifest-path "$PROJECT_ROOT/Cargo.toml"
+fi
+
+exec "$BINARY" "$@"

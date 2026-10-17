@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Markdown Viewer
+GenericName=PDF-Style Markdown Reader
+Comment=Publication-grade PDF-style Markdown viewer for Ubuntu
+Exec=markdown-viewer %U
+Icon=markdown-viewer
+Terminal=false
+Categories=Office;Viewer;Utility;TextTools;
+MimeType=text/markdown;text/x-markdown;text/plain;
+StartupNotify=true
+StartupWMClass=markdown-viewer
+Keywords=Markdown;Viewer;Reader;Document;PDF;Notes;
