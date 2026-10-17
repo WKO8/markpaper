@@ -10,5 +10,5 @@ Terminal=false
 Categories=Office;Viewer;Utility;TextEditor;
 MimeType=text/markdown;text/x-markdown;text/plain;
 StartupNotify=true
-StartupWMClass=markpaper
+StartupWMClass=chrome-127.0.0.1__-Default
 Keywords=markdown;viewer;pdf;reader;katex;mermaid;
